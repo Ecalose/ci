@@ -4,12 +4,12 @@ agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu2004
+global_job_config:
+  secrets:
+    - name: KJWJ_UP
 blocks:
   - name: Test
     task:
-      env_vars:
-        - name: KJWJ_UP
-          value: $KJWJ_UP
       jobs:
         - name: pytest
           commands:
