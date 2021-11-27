@@ -6,7 +6,8 @@ agent:
     os_image: ubuntu2004
 global_job_config:
   secrets:
-    - name: KJWJ_UP
+    - name: keji
+    - name: tz
 blocks:
   - name: Test
     task:
