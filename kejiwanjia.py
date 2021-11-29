@@ -44,8 +44,8 @@ def login(usr, pwd):
         check_head = {
             'authorization': f'Bearer {token}',
             'origin': 'https://www.kejiwanjia.com',
-            'referer': 'https://www.kejiwanjia.com/task',
-            'user-agent': 'Mozilla/5.0 (Linux; Android 10; PBEM00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.52 Mobile Safari/537.36'
+            'referer': 'https://www.kejiwanjia.com/mission/today',
+            'user-agent': 'Mozilla/5.0 (Linux; Android 12; DIPPER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.52 Mobile Safari/537.36'
 
         }
         resp = session.post(check_url, headers=check_head)
