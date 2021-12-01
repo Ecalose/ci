@@ -1,0 +1,22 @@
+version: v1.0
+name: Python
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+global_job_config:
+  secrets:
+    - name: keji
+    - name: tz
+blocks:
+  - name: Test
+    task:
+      jobs:
+        - name: pytest
+          commands:
+            - sem-version python 3.9
+            - checkout
+            - python -m pip install --upgrade pip
+            - pip install -r requirements.txt
+            - python3 kejiwanjia.py
+            - python3 kjwj.py
