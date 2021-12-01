@@ -19,3 +19,4 @@ blocks:
             - python -m pip install --upgrade pip
             - pip install -r requirements.txt
             - python3 kejiwanjia.py
+            - python3 kjwj.py
