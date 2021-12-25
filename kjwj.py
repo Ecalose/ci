@@ -167,7 +167,7 @@ async def login(session, name, pwd):
             'Content-Type': 'application/x-www-form-urlencoded',
             'Host': 'www.kejiwanjia.com',
             'User-Agent': userAgent(),
-            'Referer': 'https://www.kejiwanjia.com',
+            'Referer': 'https://www.kejiwanjia.com/task',
             'Accept-Language': 'zh-cn'
         }
         response = await session.post(url=url, headers=headers1, data=body)
