@@ -40,6 +40,13 @@ def login(usr, pwd):
         List.append(f"金币：{status.get('credit')}")
         List.append(f"等级：{status.get('lv').get('lv').get('name')}")
         token = status.get('token')
+        head = {
+            'origin': 'https://www.kejiwanjia.com',
+            'referer': 'https://www.kejiwanjia.com/task',
+            'user-agent': 'Mozilla/5.0 (Linux; Android 12; DIPPER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.52 Mobile Safari/537.36'
+
+        }
+        session.get(url='https://www.kejiwanjia.com/', headers=head)
         check_url = 'https://www.kejiwanjia.com/wp-json/b2/v1/userMission'
         check_head = {
             'authorization': f'Bearer {token}',
