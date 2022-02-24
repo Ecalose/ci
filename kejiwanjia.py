@@ -43,7 +43,7 @@ def login(usr, pwd):
         head = {
             'origin': 'https://www.kejiwanjia.com',
             'referer': 'https://www.kejiwanjia.com/task',
-            'user-agent': 'Mozilla/5.0 (Linux; Android 12; DIPPER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.52 Mobile Safari/537.36'
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56'
 
         }
         session.get(url='https://www.kejiwanjia.com', headers=head)
@@ -53,7 +53,7 @@ def login(usr, pwd):
             'authorization': f'Bearer {token}',
             'origin': 'https://www.kejiwanjia.com',
             'referer': 'https://www.kejiwanjia.com/task',
-            'user-agent': 'Mozilla/5.0 (Linux; Android 12; DIPPER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.52 Mobile Safari/537.36'
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56'
 
         }
         resp = session.post(check_url, headers=check_head)
